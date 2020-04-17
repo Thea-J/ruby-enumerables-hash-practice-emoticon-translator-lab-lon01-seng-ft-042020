@@ -9,9 +9,9 @@ emoticons = YAML.load_file(file_path)
   emoticon_hash = { }
 
   emoticons.each do |emoji_name, emoji_array|
-    emoticon_hash[:emoji_name] = { }
-    emoticon_hash[:emoji_name][:english] = emoji_array[0]
-    emoticon_hash[:emoji_name][:japanese] = emoji_array[1]
+    emoticon_hash[emoji_name] = { }
+    emoticon_hash[emoji_name][:english] = emoji_array[0]
+    emoticon_hash[emoji_name][:japanese] = emoji_array[1]
   end
   emoticon_hash
 end
