@@ -42,7 +42,7 @@ def get_english_meaning(file_path, japanese_emoticon)
   if emoji_hash[:japanese] == japanese_emoticon
    emoticon_translation.replace(emoji_hash[:english])
   else 
-    emoticon_translation.replce("Sorry, that emoticon was not found")
+    emoticon_translation.replace("Sorry, that emoticon was not found")
 end
 end
 emoticon_translation
