@@ -22,7 +22,7 @@ def get_japanese_emoticon(file_path, english_emoticon)
   emoticon_hash.each do |emoji_name, emoji_hash|
   if emoji_hash[:english] == english_emoticon
    emoticon_translation = emoji_hash[:japanese]
-  elseif emoji_hash[:english] != english_emoticon
+  elsif emoji_hash[:english] != english_emoticon
    emoticon_translation = "Sorry, that emoticon was not found"
 end
 end
