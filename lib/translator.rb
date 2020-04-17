@@ -41,7 +41,7 @@ def get_english_meaning(file_path, japanese_emoticon)
  emoticon_hash.each do |emoji_name, emoji_hash|
   if emoji_hash[:japanese] == japanese_emoticon
   emoticon_translation =  emoji_name
-  return result
+  return emoticon_translation
   end
   emoticon_translation = "Sorry, that emoticon was not found"
 end
