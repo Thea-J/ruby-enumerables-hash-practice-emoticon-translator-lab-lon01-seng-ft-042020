@@ -18,8 +18,8 @@ end
 
 def get_japanese_emoticon(file_path, english_emoticon)
  emoticon_hash = load_library(file_path)
-  if english_emoticon == emoticon_hash[emoji_name][:english]
-    emoticon_hash[emoji_name][:japanese]
+  if english_emoticon == emoticon_hash[english_emoticon][:english]
+    emoticon_hash[english_emoticon][:japanese]
   else 
     "Sorry, that emoticon was not found"
   end
@@ -27,8 +27,8 @@ end
 
 def get_english_meaning(file_path, japanese_emoticon)
   emoticon_hash = load_library(file_path)
-    if japanese_emoticon == emoticon_hash[emoji_name][:japanese]
-       emoticon_hash[emoji_name][:english]
+    if japanese_emoticon == emoticon_hash[japanese_emoticon][:japanese]
+       emoticon_hash[japanese_emoticon][:english]
   else 
      "Sorry, that emoticon was not found"
    end
