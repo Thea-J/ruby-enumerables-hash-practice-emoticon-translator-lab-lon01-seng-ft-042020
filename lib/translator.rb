@@ -17,7 +17,7 @@ emoticons = YAML.load_file(file_path)
 end
 
 def get_japanese_emoticon(file_path, english_emoticon)
-  load_library(file_path)
+ emoticon_hash = load_library(file_path)
   if english_emoticon == emoticon_hash[emoji_name][:english]
     emoticon_hash[emoji_name][:japanese]
   else 
