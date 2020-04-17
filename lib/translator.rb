@@ -41,8 +41,9 @@ def get_english_meaning(file_path, japanese_emoticon)
   emoticon_translation =  emoji_name
   return emoticon_translation
   end
-  emoticon_translation = "Sorry, that emoticon was not found"
+
 end
+  emoticon_translation = "Sorry, that emoticon was not found"
 end
 
 
