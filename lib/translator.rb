@@ -25,8 +25,9 @@ def get_japanese_emoticon(file_path, english_emoticon)
    emoticon_translation = emoji_hash[:japanese]
   return emoticon_translation
    end
-   emoticon_translation = "Sorry, that emoticon was not found"
+   
 end
+emoticon_translation = "Sorry, that emoticon was not found"
 end
 
 
