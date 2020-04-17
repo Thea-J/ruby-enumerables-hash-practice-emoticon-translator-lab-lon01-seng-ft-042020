@@ -26,7 +26,7 @@ def get_japanese_emoticon(file_path, english_emoticon)
 end
 
 def get_english_meaning(file_path, japanese_emoticon)
-  load_library(file_path)
+  emoticon_hash = load_library(file_path)
     if japanese_emoticon == emoticon_hash[emoji_name][:japanese]
        emoticon_hash[emoji_name][:english]
   else 
